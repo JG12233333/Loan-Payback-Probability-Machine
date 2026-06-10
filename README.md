@@ -1,3 +1,5 @@
+# PLEASE MAKE SURE YOU DOWNLOAD THE NOTEBOOK AND FILES TO YOUR MACHINE
+
 # Loan-Payback-Probability-Machine
 A loan risk model that scores 600K+ borrowers on likelihood of repayment. Helps lenders focus on safer approvals and reduce losses without rejecting good customers. Strong out-of-sample performance on held-out validation.
 
