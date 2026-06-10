@@ -1,4 +1,3 @@
-# PLEASE MAKE SURE YOU DOWNLOAD THE NOTEBOOK AND FILES TO YOUR PC, AND EXTRACT THE DATASETS BECAUSE THEY ARE ZIPPED
 
 # Loan-Payback-Probability-Machine
 A loan risk model that scores 600K+ borrowers on likelihood of repayment. Helps lenders focus on safer approvals and reduce losses without rejecting good customers. Strong out-of-sample performance on held-out validation.
@@ -22,6 +21,9 @@ A. Loading training data (with known outcomes) and test data (features only)
 B. Trains an ensemble model with AutoGluon, optimized for ROC AUC.
 C. Saves the model to ag_models/ for reuse 
 D. Writes a file with the ID and the predicted loan_pay_back probability
+
+# Instructions
+Please make sure you download the files to your PC, and extract and unzip the datasets back into the project directory. You will not be able to see the notebook on the repo because it was uploaded externally. 
 
 # Important notes
 time_limit = a cap on total training time in seconds
