@@ -1,4 +1,4 @@
-# PLEASE MAKE SURE YOU DOWNLOAD THE NOTEBOOK AND FILES TO YOUR PC
+# PLEASE MAKE SURE YOU DOWNLOAD THE NOTEBOOK AND FILES TO YOUR PC, AND EXTRACT THE DATASETS BECAUSE THEY ARE ZIPPED
 
 # Loan-Payback-Probability-Machine
 A loan risk model that scores 600K+ borrowers on likelihood of repayment. Helps lenders focus on safer approvals and reduce losses without rejecting good customers. Strong out-of-sample performance on held-out validation.
@@ -28,9 +28,6 @@ time_limit = a cap on total training time in seconds
 presets = model depth controls and ensemble strength
 ROC = Reciever Operating Characteristic Curve\
 AUC = Area Under Curve
-
-# Important instructions 
-You must extract and unzip the files, they are quite large... 
 
 # Why did this project depend its success on the ROC AUC? 
 The project, once again, predicts the probability that a borrower will repay their loan. Success is going to depend on whether those probabilities rank borrowers correctly: repayers should score higher than defaulters. ROC AUC was the most useful metric because it evaluates that ranking solution without forcing a strict yes/no cutoff, stays meaningful when most loans are repaid, and matches both the model output (probabilities) and the validation approach (deciles, seperation, calibration). Model training was optimized for the ROC AUC so the ensemble was selected for the same standard used to judge the final scores. 
