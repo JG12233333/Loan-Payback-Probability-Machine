@@ -34,7 +34,7 @@ You must extract and unzip the files, they are quite large...
 The project, once again, predicts the probability that a borrower will repay their loan. Success is going to depend on whether those probabilities rank borrowers correctly: repayers should score higher than defaulters. ROC AUC was the most useful metric because it evaluates that ranking solution without forcing a strict yes/no cutoff, stays meaningful when most loans are repaid, and mathces both the model output (probabilities) and the validation approach (deciles, seperation, calibration). Model training was optimized for the ROC AUC so the ensemble was selected for the same standard used to judge the final scores. 
 
 # How can we determine whether or not the model is the correct fit? 
-The case that the model works rests on four layers of evidence. Distribution checks show the pipeline is stable and discriminative. ROC AUC on held-out data shows probabilities rank outcomes correctly. Log loss and calibration show those values mean something as probabilities. Decile separation makes that ranking visible — low-scored borrowers repay less often than high-scored ones. All of this is configuration-dependent; change training time or preset and re-run the layers. The decile plot is the first place to look when something fails: it turns abstract metrics into a pattern anyone can read.
+The case that the model works rests on four layers of evidence. Distribution checks show the pipeline is stable and discriminative. ROC AUC on held-out data shows probabilities rank outcomes correctly. Log loss and calibration show those values mean something as probabilities. Decile separation makes that ranking visible meaning low-scored borrowers repay less often than high-scored ones. All of this is configuration-dependent; change training time or preset and re-run the layers. The decile plot is the first place to look when something fails: it turns abstract metrics into a pattern anyone can read.
 
 # Imagery and Explanation: 
 ## Decile Validation Plot
@@ -109,7 +109,7 @@ This chart matters because it is a direct visual check that the repayment probab
 
 <img width="590" height="590" alt="image" src="https://github.com/user-attachments/assets/bb88561f-2651-48dc-8bd4-d1bafd2a4931" />
 
-The ROC curve evaluates the model on held-out validation data by testing every possible probability cutoff. The teal line rises steeply toward the top-left, meaning the model achieves a high true positive rate while keeping the false positive rate low. An AUC of 0.933 indicates strong ranking performance — repayers consistently receive higher predicted repayment probabilities than defaulters, which is far above random guessing (0.50). This supports the same conclusion as the decile and separation plots: the model’s probability scores carry real discriminative signal.
+The ROC curve evaluates the model on held-out validation data by testing every possible probability cutoff. The teal line rises steeply toward the top-left, meaning the model achieves a high true positive rate while keeping the false positive rate low. An AUC of 0.933 indicates strong ranking performance, thus repayers consistently receive higher predicted repayment probabilities than defaulters, which is far above random guessing (0.50). This supports the same conclusion as the decile and separation plots: the model’s probability scores carry real discriminative signal.
 
 ## The model calibration curve
 
