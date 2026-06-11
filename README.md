@@ -129,7 +129,7 @@ https://auto.gluon.ai/stable/index.html
 AutoGluon makes missing‑data handling essentially invisible to the user because the moment you load a dataset with TabularDataset or start training with TabularPredictor.fit(), it automatically analyzes every column, determines its feature type, and applies the correct preprocessing steps behind the scenes. Instead of requiring you to manually encode or impute NaNs, AutoGluon detects missing values, classifies each column as numerical, categorical, text, or datetime, and then applies the appropriate transformation pipeline for that type. This behavior is built into its feature‑engineering system, which explicitly recognizes different feature categories and assigns tailored processing rules to each one—including how to handle missing entries. As a result, users can focus on modeling rather than data cleaning, because AutoGluon’s import and preprocessing stages take care of encoding and imputing missing data automatically.
 
 
-### References 
+## References 
 
 Area Under the ROC Curve (AUC)
 Fawcett, T. (2006). An introduction to ROC analysis. Pattern Recognition Letters, 27(8), 861–874. https://doi.org/10.1016/j.patrec.2005.10.010 (doi.org in Bing)
