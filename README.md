@@ -23,7 +23,7 @@ C. Saves the model to ag_models/ for reuse
 D. Writes a file with the ID and the predicted loan_pay_back probability
 
 # Instructions
-Please make sure you download the files to your PC, and extract and unzip the datasets back into the project directory. You will not be able to see the notebook on the repo because it was uploaded externally. 
+loanrisk.zip is where the project, and its datasets are at, please make sure to extract the files to view the project. Furthermore, when it comes to RAM and CPU, please be sure, after you've ran the main notebook, to delete the ag_models folder, otherwise it will take forever to load the project if you plan on extensively reusing it, and regenerating models. If anyone has suggestions to make on how this project could be best suited for their needs, please email jgoetz3@live.spcollege.edu. 
 
 # Important notes
 time_limit = a cap on total training time in seconds
