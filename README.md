@@ -129,6 +129,29 @@ https://auto.gluon.ai/stable/index.html
 AutoGluon makes missing‑data handling essentially invisible to the user because the moment you load a dataset with TabularDataset or start training with TabularPredictor.fit(), it automatically analyzes every column, determines its feature type, and applies the correct preprocessing steps behind the scenes. Instead of requiring you to manually encode or impute NaNs, AutoGluon detects missing values, classifies each column as numerical, categorical, text, or datetime, and then applies the appropriate transformation pipeline for that type. This behavior is built into its feature‑engineering system, which explicitly recognizes different feature categories and assigns tailored processing rules to each one—including how to handle missing entries. As a result, users can focus on modeling rather than data cleaning, because AutoGluon’s import and preprocessing stages take care of encoding and imputing missing data automatically.
 
 
+### References 
+
+Area Under the ROC Curve (AUC)
+Fawcett, T. (2006). An introduction to ROC analysis. Pattern Recognition Letters, 27(8), 861–874. https://doi.org/10.1016/j.patrec.2005.10.010 (doi.org in Bing)
+
+AutoGluon
+Erickson, N., Mueller, J., Zhang, H., Li, M., Smola, A., & others. (2020). AutoGluon: AutoML for image, text, and tabular data. AutoGluon. https://auto.gluon.ai
+
+pandas
+The pandas development team. (2024). pandas (Version 2.x) [Computer software]. https://pandas.pydata.org
+
+NumPy
+Harris, C. R., Millman, K. J., van der Walt, S. J., Gommers, R., Virtanen, P., & others. (2020). Array programming with NumPy. Nature, 585, 357–362. https://doi.org/10.1038/s41586-020-2649-2 (doi.org in Bing)
+
+matplotlib
+Hunter, J. D. (2007). Matplotlib: A 2D graphics environment. Computing in Science & Engineering, 9(3), 90–95. https://doi.org/10.1109/MCSE.2007.55 (doi.org in Bing)
+
+scikit‑learn
+Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., & others. (2011). Scikit-learn: Machine learning in Python. Journal of Machine Learning Research, 12, 2825–2830.
+
+seaborn
+Waskom, M. L. (2021). Seaborn: Statistical data visualization. Journal of Open Source Software, 6(60), 3021. https://doi.org/10.21105/joss.03021
+
 
 
 
